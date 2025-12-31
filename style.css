@@ -245,6 +245,8 @@ header {
   border-radius: 6px;
   box-shadow: 0 0 30px #ddd;
   filter: drop-shadow( 6px 6px 6px #ddd);
+transform: scale(1);
+  transition: 0.3s ease-in;
 }
 
 .skills-item img {
@@ -254,8 +256,9 @@ header {
 
 .skills-item:hover {
   transform: scale(1.2);
-  transition: 1s ease;
+  transition: 0.3s ease-in;
   border-color: cyan;
+  cursor:pointer;
 }
 
 .contact {
