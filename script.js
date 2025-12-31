@@ -47,11 +47,13 @@ projects.forEach((project)=>{
   })
 
 const htmlFragment =  `
+     <div class="project-item">
      <img src="${project.image}" alt="projek4" class="project-image">
       <h2>${project.title}</h2>
       <p><b>Deskripsi : </b>${project.description}</p>
       <p><b>Teknologi yang digunakan : </b>${technologies}</p>
       <p><b>Tantangan : </b>${project.challenge}</p>
+     </div>
     `
 
         containerProject.innerHTML += htmlFragment

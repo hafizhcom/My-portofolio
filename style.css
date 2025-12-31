@@ -179,7 +179,8 @@ header {
 
 
 .container-project, .container-certificate {
-  text-align: center;
+  text-align: justify;
+  padding:0 20px;
 
 }
 
@@ -190,32 +191,43 @@ header {
 
 .container-certificate{
   display:flex;
-  justify-contents:space-between;
+  justify-content:space-around;
   padding:0 20px;
   margin-top:25px;
   overflow-x:hidden;
-
+  width:100%;
 }
 
 .certificate-item {
           /* Lebar item tetap 350px, tidak menyusut */
+  width:400px;
   margin:13px 13px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .certificate-item>p {
  text-align:justify;
-
+margin-top:15px;
 }
 
 
 .certificate-item>img{
- height:250px;
+ height:300px;
  object-fit:contain;
   
 }
+.container-project{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.project-item{
+ width:600px;
+  padding:0 15px;
+ 
+}
+
 
 .container-project p,  {
   font-size: 16px;
@@ -225,6 +237,8 @@ header {
   text-align: justify;
   animation: fadeInUp 11s;
 }
+
+
 
 @keyframes fadeInUp {
   0% {
@@ -242,7 +256,7 @@ header {
   height: 350px;
   border: 8px solid grey;
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin: 40px 0px;
   box-shadow: 8px 8px 8px lightgrey;
   object-fit:cover;
 }
@@ -365,6 +379,6 @@ transform: scale(1);
 
 
    .container-certificate{
-    flex-direction:column;
+    flex-wrap:wrap;
    }
 }
