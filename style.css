@@ -220,11 +220,14 @@ margin-top:15px;
 .container-project{
   display:flex;
   flex-wrap:wrap;
-  justify-content:center;
+  justify-content:space-around;
 }
 .project-item{
- width:600px;
-  padding:0 15px;
+  width:400px;
+  margin:13px 13px;
+  display: flex;
+  flex-direction: column;
+
  
 }
 
@@ -252,13 +255,13 @@ margin-top:15px;
 }
 
 .container-project img{
-  width:70%;
-  height: 350px;
+ 
   border: 8px solid grey;
   border-radius: 5px;
   margin: 40px 0px;
   box-shadow: 8px 8px 8px lightgrey;
   object-fit:cover;
+  height:300px;
 }
 
 .skills {
