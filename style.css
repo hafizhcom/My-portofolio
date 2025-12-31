@@ -176,8 +176,11 @@ header {
   
 }
 
+
+
 .container-project, .container-certificate {
   text-align: center;
+
 }
 
 .container-project h2 {
@@ -185,7 +188,36 @@ header {
   margin-top: 10px;
 }
 
-.container-project p, .container-certificate p {
+.container-certificate{
+  display:flex;
+  justify-contents:space-between;
+  padding:0 20px;
+  margin-top:25px;
+  overflow-x:hidden;
+
+}
+
+.certificate-item {
+          /* Lebar item tetap 350px, tidak menyusut */
+  margin:13px 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certificate-item>p {
+ text-align:justify;
+
+}
+
+
+.certificate-item>img{
+ height:250px;
+ object-fit:contain;
+  
+}
+
+.container-project p,  {
   font-size: 16px;
   font-family: arial,sans-serif;
   margin-right: 78px;
@@ -205,13 +237,14 @@ header {
   }
 }
 
-.container-project img, .container-certificate img{
-  width: 70%;
+.container-project img{
+  width:70%;
   height: 350px;
   border: 8px solid grey;
   border-radius: 5px;
   margin-bottom: 20px;
   box-shadow: 8px 8px 8px lightgrey;
+  object-fit:cover;
 }
 
 .skills {
@@ -317,5 +350,13 @@ transform: scale(1);
    .skills-item img{
     height:60px;
     width:60px;
+   }
+}
+
+@media screen and (max-width:800px) {
+
+
+   .container-certificate{
+    flex-direction:column;
    }
 }

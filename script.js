@@ -47,7 +47,7 @@ projects.forEach((project)=>{
   })
 
 const htmlFragment =  `
-     <img src="${project.image}" alt="projek4">
+     <img src="${project.image}" alt="projek4" class="project-image">
       <h2>${project.title}</h2>
       <p><b>Deskripsi : </b>${project.description}</p>
       <p><b>Teknologi yang digunakan : </b>${technologies}</p>
